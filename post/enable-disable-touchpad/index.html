@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Enable/Disable Touchpad on Linux - Blog by aasutossh</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="aasutossh" /><meta name="description" content="To enable or disable touchpad or any other hardware device on linux you need to make use of xinput command.
+The official manpage describes xinput as:
+ xinput is a utility to list available input devices, query information about a device and change input device settings.
+ To enable/disable touch pad we need to run xinput list. When I run xinput list I get the following output.
+1 2 3 4 5 6 7 8 9 10 11 12 13  $ xinput list ⎡ Virtual core pointer id=2 [master pointer (3)] ⎜ ↳ Virtual core XTEST pointer id=4 [slave pointer (2)] ⎜ ↳ SynPS/2 Synaptics TouchPad id=11 [slave pointer (2)] ⎣ Virtual core keyboard id=3 [master keyboard (2)] ↳ Virtual core XTEST keyboard id=5 [slave keyboard (3)] ↳ Power Button id=6 [slave keyboard (3)] ↳ Video Bus id=7 [slave keyboard (3)] ↳ Power Button id=8 [slave keyboard (3)] ↳ HP Webcam-50 id=9 [slave keyboard (3)] ↳ AT Translated Set 2 keyboard id=10 [slave keyboard (3)] ↳ HP WMI hotkeys id=12 [slave keyboard (3)] ↳ HP Wireless hotkeys id=13 [slave keyboard (3)]   As you can see above I own a HP laptop, so there is HP based devices in my system." /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.69.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/enable-disable-touchpad/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Enable/Disable Touchpad on Linux" />
+<meta property="og:description" content="To enable or disable touchpad or any other hardware device on linux you need to make use of xinput command.
+The official manpage describes xinput as:
+ xinput is a utility to list available input devices, query information about a device and change input device settings.
+ To enable/disable touch pad we need to run xinput list. When I run xinput list I get the following output.
+1 2 3 4 5 6 7 8 9 10 11 12 13  $ xinput list ⎡ Virtual core pointer id=2 [master pointer (3)] ⎜ ↳ Virtual core XTEST pointer id=4 [slave pointer (2)] ⎜ ↳ SynPS/2 Synaptics TouchPad id=11 [slave pointer (2)] ⎣ Virtual core keyboard id=3 [master keyboard (2)] ↳ Virtual core XTEST keyboard id=5 [slave keyboard (3)] ↳ Power Button id=6 [slave keyboard (3)] ↳ Video Bus id=7 [slave keyboard (3)] ↳ Power Button id=8 [slave keyboard (3)] ↳ HP Webcam-50 id=9 [slave keyboard (3)] ↳ AT Translated Set 2 keyboard id=10 [slave keyboard (3)] ↳ HP WMI hotkeys id=12 [slave keyboard (3)] ↳ HP Wireless hotkeys id=13 [slave keyboard (3)]   As you can see above I own a HP laptop, so there is HP based devices in my system." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/enable-disable-touchpad/" />
+<meta property="article:published_time" content="2020-04-13T07:52:23+05:45" />
+<meta property="article:modified_time" content="2020-04-13T08:00:34+05:45" />
+<meta itemprop="name" content="Enable/Disable Touchpad on Linux">
+<meta itemprop="description" content="To enable or disable touchpad or any other hardware device on linux you need to make use of xinput command.
+The official manpage describes xinput as:
+ xinput is a utility to list available input devices, query information about a device and change input device settings.
+ To enable/disable touch pad we need to run xinput list. When I run xinput list I get the following output.
+1 2 3 4 5 6 7 8 9 10 11 12 13  $ xinput list ⎡ Virtual core pointer id=2 [master pointer (3)] ⎜ ↳ Virtual core XTEST pointer id=4 [slave pointer (2)] ⎜ ↳ SynPS/2 Synaptics TouchPad id=11 [slave pointer (2)] ⎣ Virtual core keyboard id=3 [master keyboard (2)] ↳ Virtual core XTEST keyboard id=5 [slave keyboard (3)] ↳ Power Button id=6 [slave keyboard (3)] ↳ Video Bus id=7 [slave keyboard (3)] ↳ Power Button id=8 [slave keyboard (3)] ↳ HP Webcam-50 id=9 [slave keyboard (3)] ↳ AT Translated Set 2 keyboard id=10 [slave keyboard (3)] ↳ HP WMI hotkeys id=12 [slave keyboard (3)] ↳ HP Wireless hotkeys id=13 [slave keyboard (3)]   As you can see above I own a HP laptop, so there is HP based devices in my system.">
+<meta itemprop="datePublished" content="2020-04-13T07:52:23&#43;05:45" />
+<meta itemprop="dateModified" content="2020-04-13T08:00:34&#43;05:45" />
+<meta itemprop="wordCount" content="262">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Enable/Disable Touchpad on Linux"/>
+<meta name="twitter:description" content="To enable or disable touchpad or any other hardware device on linux you need to make use of xinput command.
+The official manpage describes xinput as:
+ xinput is a utility to list available input devices, query information about a device and change input device settings.
+ To enable/disable touch pad we need to run xinput list. When I run xinput list I get the following output.
+1 2 3 4 5 6 7 8 9 10 11 12 13  $ xinput list ⎡ Virtual core pointer id=2 [master pointer (3)] ⎜ ↳ Virtual core XTEST pointer id=4 [slave pointer (2)] ⎜ ↳ SynPS/2 Synaptics TouchPad id=11 [slave pointer (2)] ⎣ Virtual core keyboard id=3 [master keyboard (2)] ↳ Virtual core XTEST keyboard id=5 [slave keyboard (3)] ↳ Power Button id=6 [slave keyboard (3)] ↳ Video Bus id=7 [slave keyboard (3)] ↳ Power Button id=8 [slave keyboard (3)] ↳ HP Webcam-50 id=9 [slave keyboard (3)] ↳ AT Translated Set 2 keyboard id=10 [slave keyboard (3)] ↳ HP WMI hotkeys id=12 [slave keyboard (3)] ↳ HP Wireless hotkeys id=13 [slave keyboard (3)]   As you can see above I own a HP laptop, so there is HP based devices in my system."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">aasutossh&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">aasutossh&#39;s Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Enable/Disable Touchpad on Linux</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-04-13 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>To enable or disable touchpad or any other hardware device on linux you need to make use of <em>xinput</em> command.</p>
+<p>The official manpage describes <em>xinput</em> as:</p>
+<blockquote>
+<p><em>xinput</em> is a utility to list available input devices, query information about a device and change input device settings.</p>
+</blockquote>
+<p>To enable/disable touch pad we need to run <em>xinput</em> list. When I run <code>xinput list</code> I get the following output.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">$ xinput list
+⎡ Virtual core pointer                          <span class="nv">id</span><span class="o">=</span><span class="m">2</span>    <span class="o">[</span>master pointer  <span class="o">(</span>3<span class="o">)]</span>
+⎜   ↳ Virtual core XTEST pointer                <span class="nv">id</span><span class="o">=</span><span class="m">4</span>    <span class="o">[</span>slave  pointer  <span class="o">(</span>2<span class="o">)]</span>
+⎜   ↳ SynPS/2 Synaptics TouchPad                <span class="nv">id</span><span class="o">=</span><span class="m">11</span>   <span class="o">[</span>slave  pointer  <span class="o">(</span>2<span class="o">)]</span>
+⎣ Virtual core keyboard                         <span class="nv">id</span><span class="o">=</span><span class="m">3</span>    <span class="o">[</span>master keyboard <span class="o">(</span>2<span class="o">)]</span>
+    ↳ Virtual core XTEST keyboard               <span class="nv">id</span><span class="o">=</span><span class="m">5</span>    <span class="o">[</span>slave  keyboard <span class="o">(</span>3<span class="o">)]</span>
+    ↳ Power Button                              <span class="nv">id</span><span class="o">=</span><span class="m">6</span>    <span class="o">[</span>slave  keyboard <span class="o">(</span>3<span class="o">)]</span>
+    ↳ Video Bus                                 <span class="nv">id</span><span class="o">=</span><span class="m">7</span>    <span class="o">[</span>slave  keyboard <span class="o">(</span>3<span class="o">)]</span>
+    ↳ Power Button                              <span class="nv">id</span><span class="o">=</span><span class="m">8</span>    <span class="o">[</span>slave  keyboard <span class="o">(</span>3<span class="o">)]</span>
+    ↳ HP Webcam-50                              <span class="nv">id</span><span class="o">=</span><span class="m">9</span>    <span class="o">[</span>slave  keyboard <span class="o">(</span>3<span class="o">)]</span>
+    ↳ AT Translated Set <span class="m">2</span> keyboard              <span class="nv">id</span><span class="o">=</span><span class="m">10</span>   <span class="o">[</span>slave  keyboard <span class="o">(</span>3<span class="o">)]</span>
+    ↳ HP WMI hotkeys                            <span class="nv">id</span><span class="o">=</span><span class="m">12</span>   <span class="o">[</span>slave  keyboard <span class="o">(</span>3<span class="o">)]</span>
+    ↳ HP Wireless hotkeys                       <span class="nv">id</span><span class="o">=</span><span class="m">13</span>   <span class="o">[</span>slave  keyboard <span class="o">(</span>3<span class="o">)]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>As you can see above I own a HP laptop, so there is HP based devices in my system.</p>
+<p>What we need is the id of the touchpad, in my case that is 11.</p>
+<p>To disable the touchpad do following:</p>
+<pre><code>$ xinput set-prop 11 &quot;Device Enabled&quot; 0
+</code></pre>
+<p>To enable touchpad do following:</p>
+<pre><code>$ xinput set-prop 11 &quot;Device Enabled&quot; 1
+</code></pre>
+<p>Map these to any key combination in your window-manager or you can make alias for your shell so you can execute this command easily.</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">aasutossh</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2020-04-13
+        <a href="/commit/0d2127af556c72388d8b4d6f31eb128e9ff64934" title="updated title of enable disable touchpad post">(0d2127a)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/toggle-touchpad-in-linux/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Toggle Touchpad in Linux</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/keycodes-in-linux/">
+            <span class="next-text nav-default">Keycodes in Linux</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">aasutossh</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

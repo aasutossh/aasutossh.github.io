@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blog by aasutossh</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Blog by aasutossh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 13 Apr 2020 10:06:00 +0545</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Customizing Windows Terminal</title>
+      <link>http://localhost:1313/post/customize-windows-terminal/</link>
+      <pubDate>Mon, 13 Apr 2020 10:06:00 +0545</pubDate>
+      
+      <guid>http://localhost:1313/post/customize-windows-terminal/</guid>
+      <description>Microsoft is developing a terminal application for Windows OS which is currently in preview version and can be downloaded from Windows Store.
+Check out their promo for Windows Terminal.
+Looks interesting too.
+You can customize the terminal by changing fonts and color schemes.
+First of all open windows terminal and open Preferences by pressing Ctrl + ,
+It will open a json file in your editor where you can change fonts and schemes for each shells.</description>
+    </item>
+    
+    <item>
+      <title>Remove Ads Viber Desktop</title>
+      <link>http://localhost:1313/post/remove-ads-viber-desktop/</link>
+      <pubDate>Mon, 13 Apr 2020 10:02:27 +0545</pubDate>
+      
+      <guid>http://localhost:1313/post/remove-ads-viber-desktop/</guid>
+      <description>Viber is currently pushing ads to their desktop applications, to block them you simply block the ads domains in the hosts file for your operating system.
+I will show the process for Windows operating system.
+First search for notepad in start menu and run as administrator by right clicking it.
+Open file menu and click Open, locate the hosts file at C:\Windows\System32\drivers\etc. If you are using any Linux based OS then the hosts file is located at /etc/hosts.</description>
+    </item>
+    
+    <item>
+      <title>Ms Edge vs Firefox</title>
+      <link>http://localhost:1313/post/ms-edge-vs-firefox/</link>
+      <pubDate>Mon, 13 Apr 2020 09:52:43 +0545</pubDate>
+      
+      <guid>http://localhost:1313/post/ms-edge-vs-firefox/</guid>
+      <description>Is Microsoft Edge faster than Firefox?
+For this purpose I will be using Microsoft Edge Dev and Firefox stable version. The bench-marking tool I will be using is Basemark Web 3.0.
+My machine is HP Pavilion Power 15 (cx-0056wm).
+ I5-8300H 8GB RAM GTX 1050ti 4GB  Let&amp;rsquo;s get started. First of all I will be running benchmark on browsers with a couple of extensions on, which I normally use. Then I will re-run the test again in incognito mode without any extensions enabled.</description>
+    </item>
+    
+    <item>
+      <title>Browser Extensions I Use</title>
+      <link>http://localhost:1313/post/browser-extensions-i-use/</link>
+      <pubDate>Mon, 13 Apr 2020 09:35:32 +0545</pubDate>
+      
+      <guid>http://localhost:1313/post/browser-extensions-i-use/</guid>
+      <description>Browser extensions that I use
+In this post I will be listing the browser extensions, that I use.
+uBlock Origin Now, who doesn&amp;rsquo;t know about uBlock Origin. If you don&amp;rsquo;t use/know about uBlock, it is an ad-blocker available for most web browsers.
+Medium Unlimited This extension allows a user to read unlimited stories from Medium without becoming a member(and paying). Medium is an excellent resource to get information from excellent writers.</description>
+    </item>
+    
+    <item>
+      <title>JAnki Method Refined</title>
+      <link>http://localhost:1313/post/janki-method-refined/</link>
+      <pubDate>Mon, 13 Apr 2020 09:29:57 +0545</pubDate>
+      
+      <guid>http://localhost:1313/post/janki-method-refined/</guid>
+      <description>This post is originally written by JACK KINSELLA.
+You can visit his website and read the whole post there too. I am copying certain parts of the post that I like and I need.
+1. Screenshot Cards &amp;gt; Plain Text Cards 2. Focus On Available Functionality Over Detailed Info More important to commit to memory is awareness of what built-in functions exist within a language and what services exist within an operating system or protocol.</description>
+    </item>
+    
+    <item>
+      <title>JAnki Method for Programming/CS</title>
+      <link>http://localhost:1313/post/janki-method/</link>
+      <pubDate>Mon, 13 Apr 2020 08:43:15 +0545</pubDate>
+      
+      <guid>http://localhost:1313/post/janki-method/</guid>
+      <description>This post is originally written by JACK KINSELLA.
+You can visit and check out his website and read fully there. I just copied what I need. Short and Sweet. The paragraphs from below this are the contents of the original post.
+Using spaced repetition systems to learn and retain technical knowledge.
+Janki Method is an attempt to shorten the time needed to learn programming.
+PROBLEMS WITH LEARNING  Problem 1: We Forget Too Quickly The first rule of Janki boosts your memory:</description>
+    </item>
+    
+    <item>
+      <title>Remove Quit/Part messages in Hexchat</title>
+      <link>http://localhost:1313/post/remove-quit-part-hexchat/</link>
+      <pubDate>Mon, 13 Apr 2020 08:11:44 +0545</pubDate>
+      
+      <guid>http://localhost:1313/post/remove-quit-part-hexchat/</guid>
+      <description>Hexchat is a popular irc chat client available on all platforms. Navigate to Setting &amp;gt; General and check Hide Join and Part Messages option.</description>
+    </item>
+    
+    <item>
+      <title>Toggle Touchpad in Linux</title>
+      <link>http://localhost:1313/post/toggle-touchpad-in-linux/</link>
+      <pubDate>Mon, 13 Apr 2020 08:00:56 +0545</pubDate>
+      
+      <guid>http://localhost:1313/post/toggle-touchpad-in-linux/</guid>
+      <description>To achieve this we make use of xinput command.
+The following script will do the job. Create a new file paste the following.
+1 2 3 4 5 6 7 8 9  #!/bin/bash if xinput list-props 12 | grep &amp;#34;Device Enabled (142):.*1&amp;#34; &amp;gt;/dev/null then xinput disable 11 notify-send -u low -i mouse &amp;#34;Trackpad disabled&amp;#34; else xinput enable 11 notify-send -u low -i mouse &amp;#34;Trackpad enabled&amp;#34; fi   Run xinput list to find your device id:</description>
+    </item>
+    
+    <item>
+      <title>Enable/Disable Touchpad on Linux</title>
+      <link>http://localhost:1313/post/enable-disable-touchpad/</link>
+      <pubDate>Mon, 13 Apr 2020 07:52:23 +0545</pubDate>
+      
+      <guid>http://localhost:1313/post/enable-disable-touchpad/</guid>
+      <description>To enable or disable touchpad or any other hardware device on linux you need to make use of xinput command.
+The official manpage describes xinput as:
+ xinput is a utility to list available input devices, query information about a device and change input device settings.
+ To enable/disable touch pad we need to run xinput list. When I run xinput list I get the following output.
+1 2 3 4 5 6 7 8 9 10 11 12 13  $ xinput list ⎡ Virtual core pointer id=2 [master pointer (3)] ⎜ ↳ Virtual core XTEST pointer id=4 [slave pointer (2)] ⎜ ↳ SynPS/2 Synaptics TouchPad id=11 [slave pointer (2)] ⎣ Virtual core keyboard id=3 [master keyboard (2)] ↳ Virtual core XTEST keyboard id=5 [slave keyboard (3)] ↳ Power Button id=6 [slave keyboard (3)] ↳ Video Bus id=7 [slave keyboard (3)] ↳ Power Button id=8 [slave keyboard (3)] ↳ HP Webcam-50 id=9 [slave keyboard (3)] ↳ AT Translated Set 2 keyboard id=10 [slave keyboard (3)] ↳ HP WMI hotkeys id=12 [slave keyboard (3)] ↳ HP Wireless hotkeys id=13 [slave keyboard (3)]   As you can see above I own a HP laptop, so there is HP based devices in my system.</description>
+    </item>
+    
+    <item>
+      <title>Keycodes in Linux</title>
+      <link>http://localhost:1313/post/keycodes-in-linux/</link>
+      <pubDate>Mon, 13 Apr 2020 07:30:43 +0545</pubDate>
+      
+      <guid>http://localhost:1313/post/keycodes-in-linux/</guid>
+      <description>xev is a tool that print contents of X events .
+The manpage of xev has following description:
+ Xev creates a window and then asks the X server to send it events whenever anything happens to the window (such as it being moved, resized, typed in, clicked in, etc.). You can also attach it to an existing window. It is useful for seeing what causes events to occur and to display the information that they contain; it is essentially a debugging and development tool, and should not be needed in normal usage.</description>
+    </item>
+    
+    <item>
+      <title>Virtualenv in Fish Shell</title>
+      <link>http://localhost:1313/post/virtualenv-in-fish-shell/</link>
+      <pubDate>Mon, 13 Apr 2020 07:23:34 +0545</pubDate>
+      
+      <guid>http://localhost:1313/post/virtualenv-in-fish-shell/</guid>
+      <description>While working with python, you always need to use virtual environments.
+And for the folks like me, who uses fish shell instead of other shell. Activating the virtualenv might be a little tricky.
+The following method does not work in fish but it works in other shells like Bourne Shell, zsh.
+1 2 3 4 5 6 7 8  $ source /Path/to/venv/bin/activate /Path/to/venv/bin/activate (line 76): Missing end to balance this if statement if [ -n &amp;#34;${BASH-}&amp;#34; ] || [ -n &amp;#34;${ZSH_VERSION-}&amp;#34; ] ; then ^ from sourcing file ~/.</description>
+    </item>
+    
+  </channel>
+</rss>

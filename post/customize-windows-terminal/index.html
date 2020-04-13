@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Customizing Windows Terminal - Blog by aasutossh</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="aasutossh" /><meta name="description" content="Microsoft is developing a terminal application for Windows OS which is currently in preview version and can be downloaded from Windows Store.
+Check out their promo for Windows Terminal.
+Looks interesting too.
+You can customize the terminal by changing fonts and color schemes.
+First of all open windows terminal and open Preferences by pressing Ctrl &#43; ,
+It will open a json file in your editor where you can change fonts and schemes for each shells." /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.69.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/customize-windows-terminal/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Customizing Windows Terminal" />
+<meta property="og:description" content="Microsoft is developing a terminal application for Windows OS which is currently in preview version and can be downloaded from Windows Store.
+Check out their promo for Windows Terminal.
+Looks interesting too.
+You can customize the terminal by changing fonts and color schemes.
+First of all open windows terminal and open Preferences by pressing Ctrl &#43; ,
+It will open a json file in your editor where you can change fonts and schemes for each shells." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/customize-windows-terminal/" />
+<meta property="article:published_time" content="2020-04-13T10:06:00+05:45" />
+<meta property="article:modified_time" content="2020-04-13T10:11:07+05:45" />
+<meta itemprop="name" content="Customizing Windows Terminal">
+<meta itemprop="description" content="Microsoft is developing a terminal application for Windows OS which is currently in preview version and can be downloaded from Windows Store.
+Check out their promo for Windows Terminal.
+Looks interesting too.
+You can customize the terminal by changing fonts and color schemes.
+First of all open windows terminal and open Preferences by pressing Ctrl &#43; ,
+It will open a json file in your editor where you can change fonts and schemes for each shells.">
+<meta itemprop="datePublished" content="2020-04-13T10:06:00&#43;05:45" />
+<meta itemprop="dateModified" content="2020-04-13T10:11:07&#43;05:45" />
+<meta itemprop="wordCount" content="213">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Customizing Windows Terminal"/>
+<meta name="twitter:description" content="Microsoft is developing a terminal application for Windows OS which is currently in preview version and can be downloaded from Windows Store.
+Check out their promo for Windows Terminal.
+Looks interesting too.
+You can customize the terminal by changing fonts and color schemes.
+First of all open windows terminal and open Preferences by pressing Ctrl &#43; ,
+It will open a json file in your editor where you can change fonts and schemes for each shells."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">aasutossh&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">aasutossh&#39;s Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Customizing Windows Terminal</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-04-13 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>Microsoft is developing a terminal application for Windows OS which is currently in <code>preview version</code> and can be downloaded from <a href="https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab">Windows Store</a>.</p>
+<p>Check out their promo for Windows Terminal.</p>
+<!-- raw HTML omitted -->
+<p>Looks interesting too.</p>
+<p>You can customize the terminal by changing fonts and color schemes.</p>
+<p>First of all open windows terminal and open Preferences by pressing <code>Ctrl + ,</code></p>
+<p>It will open a json file in your editor where you can change fonts and schemes for each shells. You can specify different fonts and schemes for each shells as well.</p>
+<h4 id="to-change-the-font">To change the font</h4>
+<p>Find &ldquo;<em>profiles</em>&rdquo; section in the json file. Look for <code>fontface</code> property in the profile, change it to different font by specifying the full font name in double quotes. Save and voila, font is changed for the current profile.</p>
+<p>You can change font for each profile in the same way.</p>
+<h4 id="to-change-the-scheme">To change the scheme</h4>
+<p>First of all, select a scheme you like from these <a href="https://github.com/mbadolato/iTerm2-Color-Schemes">collection</a> of schemes. When you like one, find that theme in the windowsterminal folder and copy the content of the file.</p>
+<p>Open Preferences, search &ldquo;<em>schemes</em>&rdquo; section, paste the content and add a comma.</p>
+<p>Now, again find colorScheme property in profile, change it to new scheme name, <code>Ctrl + s</code> and done. Color scheme of Windows Terminal is changed.</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">aasutossh</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2020-04-13
+        <a href="/commit/dd42a2a5707695bf923d9a45b3bd08f01073aa8a" title="added post customize windows terminal">(dd42a2a)</a>
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/remove-ads-viber-desktop/">
+            <span class="next-text nav-default">Remove Ads Viber Desktop</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">aasutossh</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
