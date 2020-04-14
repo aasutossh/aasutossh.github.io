@@ -1,112 +1,112 @@
-<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="www.aasutossh.com.np/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>www.aasutossh.com.np/</loc>
     <lastmod>2020-04-13T11:06:40+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/make-blog-using-hugo-gh/</loc>
+    <loc>www.aasutossh.com.np/post/make-blog-using-hugo-gh/</loc>
     <lastmod>2020-04-13T11:06:40+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>www.aasutossh.com.np/post/</loc>
     <lastmod>2020-04-13T11:06:40+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/customize-windows-terminal/</loc>
+    <loc>www.aasutossh.com.np/post/customize-windows-terminal/</loc>
     <lastmod>2020-04-13T10:11:07+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/remove-ads-viber-desktop/</loc>
+    <loc>www.aasutossh.com.np/post/remove-ads-viber-desktop/</loc>
     <lastmod>2020-04-13T10:05:44+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/ms-edge-vs-firefox/</loc>
+    <loc>www.aasutossh.com.np/post/ms-edge-vs-firefox/</loc>
     <lastmod>2020-04-13T10:01:07+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/browser-extensions-i-use/</loc>
+    <loc>www.aasutossh.com.np/post/browser-extensions-i-use/</loc>
     <lastmod>2020-04-13T09:51:42+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/janki-method-refined/</loc>
+    <loc>www.aasutossh.com.np/post/janki-method-refined/</loc>
     <lastmod>2020-04-13T09:34:32+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/janki-method/</loc>
+    <loc>www.aasutossh.com.np/post/janki-method/</loc>
     <lastmod>2020-04-13T09:29:10+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/remove-quit-part-hexchat/</loc>
+    <loc>www.aasutossh.com.np/post/remove-quit-part-hexchat/</loc>
     <lastmod>2020-04-13T08:15:11+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/toggle-touchpad-in-linux/</loc>
+    <loc>www.aasutossh.com.np/post/toggle-touchpad-in-linux/</loc>
     <lastmod>2020-04-13T08:11:00+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/enable-disable-touchpad/</loc>
+    <loc>www.aasutossh.com.np/post/enable-disable-touchpad/</loc>
     <lastmod>2020-04-13T08:00:34+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/keycodes-in-linux/</loc>
+    <loc>www.aasutossh.com.np/post/keycodes-in-linux/</loc>
     <lastmod>2020-04-13T07:47:56+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/virtualenv-in-fish-shell/</loc>
+    <loc>www.aasutossh.com.np/post/virtualenv-in-fish-shell/</loc>
     <lastmod>2020-04-13T07:29:55+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>www.aasutossh.com.np/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>www.aasutossh.com.np/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
