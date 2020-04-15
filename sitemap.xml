@@ -1,112 +1,112 @@
-<?xml-stylesheet type="text/xsl" href="http://www.aasutossh.com.np/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://aasutossh.github.io/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.aasutossh.com.np/</loc>
+    <loc>http://aasutossh.github.io/</loc>
     <lastmod>2020-04-13T11:06:40+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/post/make-blog-using-hugo-gh/</loc>
+    <loc>http://aasutossh.github.io/post/make-blog-using-hugo-gh/</loc>
     <lastmod>2020-04-13T11:06:40+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/post/</loc>
+    <loc>http://aasutossh.github.io/post/</loc>
     <lastmod>2020-04-13T11:06:40+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/post/customize-windows-terminal/</loc>
+    <loc>http://aasutossh.github.io/post/customize-windows-terminal/</loc>
     <lastmod>2020-04-13T10:11:07+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/post/remove-ads-viber-desktop/</loc>
+    <loc>http://aasutossh.github.io/post/remove-ads-viber-desktop/</loc>
     <lastmod>2020-04-13T10:05:44+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/post/ms-edge-vs-firefox/</loc>
+    <loc>http://aasutossh.github.io/post/ms-edge-vs-firefox/</loc>
     <lastmod>2020-04-13T10:01:07+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/post/browser-extensions-i-use/</loc>
+    <loc>http://aasutossh.github.io/post/browser-extensions-i-use/</loc>
     <lastmod>2020-04-13T09:51:42+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/post/janki-method-refined/</loc>
+    <loc>http://aasutossh.github.io/post/janki-method-refined/</loc>
     <lastmod>2020-04-13T09:34:32+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/post/janki-method/</loc>
+    <loc>http://aasutossh.github.io/post/janki-method/</loc>
     <lastmod>2020-04-13T09:29:10+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/post/remove-quit-part-hexchat/</loc>
+    <loc>http://aasutossh.github.io/post/remove-quit-part-hexchat/</loc>
     <lastmod>2020-04-13T08:15:11+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/post/toggle-touchpad-in-linux/</loc>
+    <loc>http://aasutossh.github.io/post/toggle-touchpad-in-linux/</loc>
     <lastmod>2020-04-13T08:11:00+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/post/enable-disable-touchpad/</loc>
+    <loc>http://aasutossh.github.io/post/enable-disable-touchpad/</loc>
     <lastmod>2020-04-13T08:00:34+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/post/keycodes-in-linux/</loc>
+    <loc>http://aasutossh.github.io/post/keycodes-in-linux/</loc>
     <lastmod>2020-04-13T07:47:56+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/post/virtualenv-in-fish-shell/</loc>
+    <loc>http://aasutossh.github.io/post/virtualenv-in-fish-shell/</loc>
     <lastmod>2020-04-13T07:29:55+05:45</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/categories/</loc>
+    <loc>http://aasutossh.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.aasutossh.com.np/tags/</loc>
+    <loc>http://aasutossh.github.io/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://www.aasutossh.com.np/sitemap.xml
+Sitemap: http://aasutossh.github.io/sitemap.xml
